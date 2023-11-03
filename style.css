@@ -26,21 +26,26 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     height: 100vh;
     background-color: var(--color-cream);
 }
 
+
+
 h1 {
-    text-align: center;
-    margin: 30px;
+    font-family: 'Fraunces', serif;
+    color: var(--color-very-dark-blue);
+    font-size: 30px;
 }
 
 p {
     font-size: 14px;
+    color: var(--color-dark-garyish-blue);
 }
 
 .card-container {
-    width: 600px;
+    width: 550px;
     height: 400px;
     display: flex;
     border-radius: 15px;
@@ -69,6 +74,47 @@ p {
     color: hsl(228, 45%, 44%);
 }
 
+button {
+   background-color: var(--color-dark-cyan);
+   color: var(--color-white);
+   border-radius: 10px;
+   border: none;
+   padding: 10px;
+   width: 150px;
+}
+
+#price {
+    font-family: 'Fraunces', serif;
+    color: var(--color-dark-cyan);
+    display: inline;
+    font-size: 30px;
+}
+
+.card-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card-text-container div span {
+    color: var(--color-dark-garyish-blue);
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 30px;
+}
+
+.card-title-container {
+    padding-right: 30px;
+}
+
+.letter-spacing {
+   letter-spacing: 2px;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
 
 /* -----Mobil Design ----- */
 
@@ -79,8 +125,9 @@ p {
     }
 
     .card-container {
+        margin-top: 20px;
         width: 340px;
-        height: 480px;
+        height: 600px;
         display: flex;
         flex-direction: column;
     }
@@ -95,5 +142,15 @@ p {
         width: 100%;;
         border-radius: 15px 15px 0px 0px;
     }
+
+  .price-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-title-container {
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
 
 }
